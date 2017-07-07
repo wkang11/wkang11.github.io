@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    University Rankings
+  </title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <script type="text/javascript" src="/angular.js"></script>
+  <link rel="stylesheet" href="/stylesheet.css"/>
+</head>
+<body ng-cloak ng-app="main" class="ng-cloak">
+
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="../" class="navbar-brand">LoL Uni-Ranker</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="../aboutus">About Us</a>
+          </li>
+          <li>
+            <a href="../help">Help</a>
+          </li>
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
+          <li><a href="SomeExternalUrl" target="_blank">SomeExternalUrl</a></li>
+          <li><a href="SomeExternalUrl" target="_blank">SomeExternalUrl</a></li>
+        </ul> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="row" ng-controller="university-controller-div">
+    <div class="col-lg-12">
+      <div class="container">
+        <!-- Here check if university code exists -->
+        <div class="row mainUniversityTables">
+          <div ng-show="doesUniversityExist" class="col-lg-8">
+            <h1>Showing players from <span class="university-name">{{universityCode}}</span></h1>
+            <form class="form-input-filter-name form-inline">
+              <input ng-model="query" type="text" placeholder="Filter by Name" autofocus>
+            </form>
+            <ul class="list-group list-inline uni-ranking-list-ul" ng-repeat="rankingData in allRankingData | filter:query | orderBy:'-internalRanking'" ng-init="index = $index + 1">
+    		      <li class="uni-width-smaller uni-ranking list-group-item">{{index}}</li>
+      		    <li class="uni-width-larger uni-player-name list-group-item">{{rankingData[0].entries[0].playerOrTeamName}}</li>
+      		    <li class="uni-width-larger list-group-item"><b>
+                <span class="uni-ranking-tier-{{rankingData[0].tier}}">{{rankingData[0].tier}}</span></b> 
+                <span class="uni-ranking-division">{{rankingData[0].entries[0].division}}</span> - 
+                <span class="uni-ranking-LP">{{rankingData[0].entries[0].leaguePoints}}LP</span>
+              </li>
+    	     	</ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

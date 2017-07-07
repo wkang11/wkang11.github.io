@@ -1,0 +1,89 @@
+Steps so far to get to login the thenuel.com
+
+
+Do a GET on:
+https://login.thenuel.com/authenticate/login?ReturnUrl=%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dc82cb4c9-7cfa-4483-938b-2d3c61efabea%26redirect_uri%3Dhttps%253A%252F%252Fthenuel.com%252Fsignin-nuel%26scope%3Didentity%2520offline%26state%3Dr-PMWOWSi7ReskK156Zx_q5XIm_cVAEt2Znx1PaD38OuY_TgZohfSTJ_R-OU8F8rpoOqDKux13fNFFuXXECMBfVXSP675cHyL6n7r7_-IDHMADTgFQ6ldm4QslUpn84Qmdqp-SUaRK9LWzW1Jq-Fd88jbD0UzmoMMVZ9Y--WEMnbNT9-586c_dp8LNPB7gKXgqy_DBdiR5OqXMQBmvCxMee0eD2NWphStZuk4kNIb8ee_2kNmtaiumq1LgNJdSl_
+
+Look at form action e.g:
+<form action="/authenticate/login?ReturnUrl=%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dc82cb4c9-7cfa-4483-938b-2d3c61efabea%26redirect_uri%3Dhttps%253A%252F%252Fthenuel.com%252Fsignin-nuel%26scope%3Didentity%2520offline%26state%3Dr-PMWOWSi7ReskK156Zx_q5XIm_cVAEt2Znx1PaD38OuY_TgZohfSTJ_R-OU8F8rpoOqDKux13fNFFuXXECMBfVXSP675cHyL6n7r7_-IDHMADTgFQ6ldm4QslUpn84Qmdqp-SUaRK9LWzW1Jq-Fd88jbD0UzmoMMVZ9Y--WEMnbNT9-586c_dp8LNPB7gKXgqy_DBdiR5OqXMQBmvCxMee0eD2NWphStZuk4kNIb8ee_2kNmtaiumq1LgNJdSl_" method="post">
+                        <input name="__RequestVerificationToken" type="hidden" value="W0lPt_s5HO9GUBTe4X8cw3EdFSkhjzgmrCS6NzV8lXAyfg6B6Jd67tz3aXBvNLwKE7E5g7HHHw2nmIjDjKXc90EknB2Nkej1DXCAXvUESbY1" />
+                        <label for="UserName">Email address</label>
+                        <input data-val="true" data-val-required="The Email address field is required." id="UserName" name="UserName" type="email" value="" />
+                        <label for="Password">Password</label>
+                        <input data-val="true" data-val-required="The Password field is required." id="Password" name="Password" type="password" />
+                        <input type="submit" value="Log In" />
+
+                    </form>
+
+Get the form action as the URL for the POST
+
+And for Headers pass in the:
+__RequestVerificationToken = W0lPt_s5HO9GUBTe4X8cw3EdFSkhjzgmrCS6NzV8lXAyfg6B6Jd67tz3aXBvNLwKE7E5g7HHHw2nmIjDjKXc90EknB2Nkej1DXCAXvUESbY1
+UserName = your email
+Password = your password
+
+On the GET of the login page, in response headers, you get the 2nd ARRAFinnity code and the RequestVerificationToken
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Response from the POST:
+
+GENERAL:
+
+Request URL:https://login.thenuel.com/authenticate/login?ReturnUrl=%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dc82cb4c9-7cfa-4483-938b-2d3c61efabea%26redirect_uri%3Dhttps%253A%252F%252Fthenuel.com%252Fsignin-nuel%26scope%3Didentity%2520offline%26state%3D9qb9n-pmeYanAu_rPBL0NsgmdKO8zpuuHlYsytrA887fpNDn3mPRb4i94pp88-OIVzi7G--CNhC39jO2OradXZnKyj-p2qwIKViKmh8kLArxdUkaUyCmGjTrS54QCZp8eNkjDnIW9wgr9mSAEuQR1Zi9yp_QeSKvlX-BapNFcSymZ3RE1O-_u6ew7tmy0eY_6k5iiO1MIO8iVweRylYs7PmZpXwGkW82TXSrbTifvAnVpSfryrQOOgZQe8yC60zR
+Request Method:POST
+Status Code:200 OK
+Remote Address:10.65.100.180:8080
+
+RESPONSE HEADERS:
+
+Cache-Control:private
+Content-Encoding:gzip
+Content-Length:1919
+Content-Type:text/html; charset=utf-8
+Date:Thu, 24 Mar 2016 18:26:30 GMT
+Server:Microsoft-IIS/8.0
+Set-Cookie:ARRAffinity=a3f73b95b701c1dc8e0a02658ca0faeb277d271171d6f49e7361838d60986f8f;Path=/;Domain=login.thenuel.com
+Vary:Accept-Encoding
+X-AspNet-Version:4.0.30319
+X-AspNetMvc-Version:5.2
+X-Frame-Options:SAMEORIGIN
+X-Frame-Options:SAMEORIGIN
+
+REQUEST HEADERS:
+
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding:gzip, deflate
+Accept-Language:en-US,en;q=0.8
+Cache-Control:max-age=0
+Connection:keep-alive
+Content-Length:180
+Content-Type:application/x-www-form-urlencoded
+Cookie:ARRAffinity=5b17567435646dac45043c0c794c3b0ff3a00b013f21e882c40ab5fbe708361e; _ga=GA1.2.592576149.1458220828; _gat=1; __RequestVerificationToken=b6inftAb-OmF-EqXphxlUzX23GKHofjdlfVu-3kwzZ0dSm3uYydp1nz7I5Et_PgUIg2lWncnBU1_m4r3j9mdO_BJ-iKGVKBxr7qxEMtfWyk1; ARRAffinity=a3f73b95b701c1dc8e0a02658ca0faeb277d271171d6f49e7361838d60986f8f
+Host:login.thenuel.com
+Origin:https://login.thenuel.com
+Referer:https://login.thenuel.com/authenticate/login?ReturnUrl=%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3Dc82cb4c9-7cfa-4483-938b-2d3c61efabea%26redirect_uri%3Dhttps%253A%252F%252Fthenuel.com%252Fsignin-nuel%26scope%3Didentity%2520offline%26state%3D9qb9n-pmeYanAu_rPBL0NsgmdKO8zpuuHlYsytrA887fpNDn3mPRb4i94pp88-OIVzi7G--CNhC39jO2OradXZnKyj-p2qwIKViKmh8kLArxdUkaUyCmGjTrS54QCZp8eNkjDnIW9wgr9mSAEuQR1Zi9yp_QeSKvlX-BapNFcSymZ3RE1O-_u6ew7tmy0eY_6k5iiO1MIO8iVweRylYs7PmZpXwGkW82TXSrbTifvAnVpSfryrQOOgZQe8yC60zR
+Upgrade-Insecure-Requests:1
+User-Agent:Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36
+
+QUERY STRING PARAMETERS
+
+ReturnUrl:/authorize?response_type=code&client_id=c82cb4c9-7cfa-4483-938b-2d3c61efabea&redirect_uri=https%3A%2F%2Fthenuel.com%2Fsignin-nuel&scope=identity%20offline&state=9qb9n-pmeYanAu_rPBL0NsgmdKO8zpuuHlYsytrA887fpNDn3mPRb4i94pp88-OIVzi7G--CNhC39jO2OradXZnKyj-p2qwIKViKmh8kLArxdUkaUyCmGjTrS54QCZp8eNkjDnIW9wgr9mSAEuQR1Zi9yp_QeSKvlX-BapNFcSymZ3RE1O-_u6ew7tmy0eY_6k5iiO1MIO8iVweRylYs7PmZpXwGkW82TXSrbTifvAnVpSfryrQOOgZQe8yC60zR
+
+FORM DATA
+
+__RequestVerificationToken:2Tn95gkCai1weSzl96HKpasBr9USoj87GMOyfRN2VeBFCbMcq28hdrqZsBbwMijGYISbQhgETs6TMczrUuk3LCrklvJBravFF7121zBAHgE1
+UserName:email@email.com
+Password:Password

@@ -1,0 +1,133 @@
+https://euw.api.pvp.net/api/lol/euw/v2.5/league/by-summoner/38584682/entry?api_key=896349ec-4ce2-49ed-be1a-b480bf0c7d49
+
+{"38584682":[
+	{
+	"name":"Wukong's Runemasters",
+	"tier":"GOLD",
+	"queue":"RANKED_SOLO_5x5",
+	"entries":
+		[
+			{
+				"playerOrTeamId":"38584682",
+				"playerOrTeamName":"TheBlackSceptre",
+				"division":"V",
+				"leaguePoints":100,
+				"wins":26,"losses":24,
+				"isHotStreak":false,
+				"isVeteran":false,
+				"isFreshBlood":false,
+				"isInactive":false,
+				"miniSeries":
+				{
+					"target":2,
+					"wins":0,
+					"losses":0,
+					"progress":"NNN"
+				}
+			}
+		]
+	}
+			]
+}
+{"theblacksceptre":
+	{
+		"id":38584682,
+		"name":"TheBlackSceptre",
+		"profileIconId":786,
+		"summonerLevel":30,
+		"revisionDate":1456789619000
+	}
+}
+
+NEW DATA:
+
+{
+	"UKC" :
+	[
+		{"SOME_VALUE":
+			{"38584682":
+				[
+					{
+					"name":"Wukong's Runemasters",
+					"tier":"GOLD",
+					"queue":"RANKED_SOLO_5x5",
+					"entries":
+						[
+							{
+								"playerOrTeamId":"38584682",
+								"playerOrTeamName":"TheBlackSceptre",
+								"division":"V",
+								"leaguePoints":100,
+								"wins":26,"losses":24,
+								"isHotStreak":false,
+								"isVeteran":false,
+								"isFreshBlood":false,
+								"isInactive":false,
+								"miniSeries":
+								{
+									"target":2,
+									"wins":0,
+									"losses":0,
+									"progress":"NNN"
+								}
+							}
+						]
+					}
+				]
+			}
+			{"theblacksceptre":
+				{
+					"id":38584682,
+					"name":"TheBlackSceptre",
+					"profileIconId":786,
+					"summonerLevel":30,
+					"revisionDate":1456789619000
+				}
+			}
+		}
+	]
+}
+
+	{"SOME_VALUE":
+		{"38584682":
+			[
+				{
+				"name":"Wukong's Runemasters",
+				"tier":"GOLD",
+				"queue":"RANKED_SOLO_5x5",
+				"entries":
+					[
+						{
+							"playerOrTeamId":"38584682",
+							"playerOrTeamName":"TheBlackSceptre",
+							"division":"V",
+							"leaguePoints":100,
+							"wins":26,"losses":24,
+							"isHotStreak":false,
+							"isVeteran":false,
+							"isFreshBlood":false,
+							"isInactive":false,
+							"miniSeries":
+							{
+								"target":2,
+								"wins":0,
+								"losses":0,
+								"progress":"NNN"
+							}
+						}
+					]
+				}
+			]
+		}
+		{"theblacksceptre":
+			{
+				"id":38584682,
+				"name":"TheBlackSceptre",
+				"profileIconId":786,
+				"summonerLevel":30,
+				"revisionDate":1456789619000
+			}
+		}
+	}
+
+https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/theblacksceptre?api_key=896349ec-4ce2-49ed-be1a-b480bf0c7d49
