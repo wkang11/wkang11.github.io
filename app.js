@@ -7,7 +7,7 @@ var server = http.createServer(app);
 var summonerInfo = require('./routes.js');
 
 app.use(express.static(__dirname + '/static'));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 
 app.get('/', function(req, res){
