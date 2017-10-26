@@ -1,133 +1,199 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Weijie Kang - Resume</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="my resume" />
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width"/>
-<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
-<meta charset="UTF-8"> 
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
 
-<link type="text/css" rel="stylesheet" href="style.css">
-<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
-
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body id="top">
-<div id="cv" class="instaFade">
-	<div class="mainDetails">
-		<div id="headshot" class="quickFade">
-			<img src="headshot.jpg" />
-		</div>
-		
-		<div id="name">
-			<h1 class="quickFade delayTwo">Weijie Kang</h1>
-			<h2 class="quickFade delayThree">Software Engineer</h2>
-		</div>
-		
-		<div id="contactDetails" class="quickFade delayFour">
-			<ul>
-				<li>e: <a href="mailto:joe@bloggs.com" target="_blank">kwjstudyhard@gmail.com</a></li>
-				<li>w: <a href="http://www.bloggs.com">www.kwjstudyhard.com</a></li>
-				<li>m: 3109456600</li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-	</div>
-	
-	<div id="mainArea" class="quickFade delayFive">
-		<section>
-			<article>
-				<div class="sectionTitle">
-					<h1>Key Skills</h1>
-				</div>
-				
-				<div class="sectionContent">
-					<p>AWS, C#, Java, JavaScript, MYSQL, Angular, Git, GoCD<br /> 
-						R, SAS, Data warehousing and analytics<br /> 
-						Microsoft Certified Professional<br /> 
-						Microsoft Specialist: Programming in C#<br /> 
-						SAS Certified Advanced Programmer for SAS 9 Credential
-					</p>
-				</div>
-			</article>
-			<div class="clear"></div>
-		</section>
-		
-		
-		<section>
-			<div class="sectionTitle">
-				<h1>Work Experience</h1>
-			</div>
-			
-			<div class="sectionContent">
-				<article>
-					<h2>FullStack Software Engineer at Hunter Industries</h2>
-					<p class="subDetails">Janruary 2016 - Present</p>
-					<p>Collaborate closely with eight team members on an IoT project using Amazon Web Services.<br/>
-					Work in a Modern Agile Software Engineer Team (Mob programming). Apply Test Driven Development techniques on refactoring legacy.<br/>
-					Refactor a fifteen years old legacy windows application from VB to C#. Our new implementation integrates with angular4 to enable user to view SVG animations. 
-					</p>
-				</article>
-				
-				<article>
-					<h2>Software Developer at Solid Commerce</h2>
-					<p class="subDetails">March 2013 - Janruary 2016</p>
-					<p>Directed company internal website design and development using Asp.net with Angular1. The website helped account managers to control windows services applications remotely without accessing customer account.<br/>
-						Implemented an Excel Add-In tool using Microsoft COM technology with user-friendly Ribbon. Enhanced Excel Add-In tool with multi-thread functions and background progress bar. Deployed Excel Add-In setup with auto update and version control features.<br/>
-						Built new RESTful web services API for clients to control inventory data. Refactored the existing SOAP web services API with reusable marketplace factory code for current third party developers.<br/>
-						Implemented Solid Commerce shipping labels generator using Stamps.com API and Endicia API.
-					</p>
-				</article>
-				
-				<article>
-					<h2>Software Engineer Intern at LostPointsLLC</h2>
-					<p class="subDetails">June 2012 - February  2013</p>
-					<p>Integrated with Kinect SDK using C# WPF and led the computer science team developed a new interactive and immersive user interface software for The Orpheum Children’s Museum.<br/>
-						Designed and built a Scheduler UI using XML and ASP.NET with multiply functions (send emails at a certain time; add local data as attachments; important event notification; process executable files).<br/>
-						Enhanced the NCGA membership project with functions of address input correction and postcode plus4 modification by using C# Silverlight and SQL Server.
-					</p>
-				</article>
-			</div>
-			<div class="clear"></div>
-		</section>
-			
-		<section>
-			<div class="sectionTitle">
-				<h1>Education</h1>
-			</div>
-			
-			<div class="sectionContent">
-				<article>
-					<h2>University of Illinois at Urbana Champaign</h2>
-					<p class="subDetails">Master of Science in Statistics</p>
-					<p>GPA: 3.81/4.00</p>
-				</article>				
-				<article>
-					<h2>Saint Mary's University of Minnesota</h2>
-					<p class="subDetails">Bachelors of Science in Mathematics/Computer Science, Minor: Statistics</p>
-					<p>GPA: 3.6/4.00 Dean’s Honors List (top 10%)</p>
-				</article>
-				<article>
-					<h2>Northwest University</h2>
-					<p class="subDetails">Major in Computer Science and Technology</p>
-					<p>Top 1% GPA, and successfully selected out of over 100 students for the exchange program to Saint Mary’s University with half tuition deduction</p>
-				</article>
-			</div>
-			<div class="clear"></div>
-		</section>
-		
-	</div>
-</div>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-3753241-1");
-pageTracker._initData();
-pageTracker._trackPageview();
-</script>
+
+<body>
+    <div id='example'>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#resume">Resume</a></li>
+            <li><a data-toggle="tab" href="#game">Game</a></li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div id="resume" class="tab-pane fade in active">
+            <div id="cv" class="instaFade">
+                <div class="mainDetails">
+                    <div id="headshot" class="quickFade">
+                        <img src="headshot.jpg" />
+                    </div>
+
+                    <div id="name">
+                        <h1 class="quickFade delayTwo">Weijie Kang</h1>
+                        <h2 class="quickFade delayThree">Software Engineer</h2>
+                    </div>
+
+                    <div id="contactDetails" class="quickFade delayFour">
+                        <ul>
+                            <li>e: <a href="mailto:joe@bloggs.com" target="_blank">kwjstudyhard@gmail.com</a></li>
+                            <li>w: <a href="http://www.bloggs.com">www.kwjstudyhard.com</a></li>
+                            <li>m: 3109456600</li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div id="mainArea" class="quickFade delayFive">
+                    <section>
+                        <article>
+                            <div class="sectionTitle">
+                                <h1>Key Skills</h1>
+                            </div>
+
+                            <div class="sectionContent">
+                                <p>AWS, C#, Java, JavaScript, MYSQL, Angular, Git, GoCD<br /> R, SAS, Data warehousing and analytics<br
+                                    /> Microsoft Certified Professional<br /> Microsoft Specialist: Programming in C#<br
+                                    /> SAS Certified Advanced Programmer for SAS 9 Credential
+                                </p>
+                            </div>
+                        </article>
+                        <div class="clear"></div>
+                    </section>
+
+
+                    <section>
+                        <div class="sectionTitle">
+                            <h1>Work Experience</h1>
+                        </div>
+
+                        <div class="sectionContent">
+                            <article>
+                                <h2>FullStack Software Engineer at Hunter Industries</h2>
+                                <p class="subDetails">Janruary 2016 - Present</p>
+                                <p>Collaborate closely with eight team members on an IoT project using Amazon Web Services.<br/>                                    Work in a Modern Agile Software Engineer Team (Mob programming). Apply Test Driven Development
+                                    techniques on refactoring legacy.<br/> Refactor a fifteen years old legacy windows application
+                                    from VB to C#. Our new implementation integrates with angular4 to enable user to view
+                                    SVG animations.
+                                </p>
+                            </article>
+
+                            <article>
+                                <h2>Software Developer at Solid Commerce</h2>
+                                <p class="subDetails">March 2013 - Janruary 2016</p>
+                                <p>Directed company internal website design and development using Asp.net with Angular1. The
+                                    website helped account managers to control windows services applications remotely without
+                                    accessing customer account.<br/> Implemented an Excel Add-In tool using Microsoft COM
+                                    technology with user-friendly Ribbon. Enhanced Excel Add-In tool with multi-thread functions
+                                    and background progress bar. Deployed Excel Add-In setup with auto update and version
+                                    control features.<br/> Built new RESTful web services API for clients to control inventory
+                                    data. Refactored the existing SOAP web services API with reusable marketplace factory
+                                    code for current third party developers.
+                                    <br/> Implemented Solid Commerce shipping labels generator using Stamps.com API and Endicia
+                                    API.
+                                </p>
+                            </article>
+
+                            <article>
+                                <h2>Software Engineer Intern at LostPointsLLC</h2>
+                                <p class="subDetails">June 2012 - February 2013</p>
+                                <p>Integrated with Kinect SDK using C# WPF and led the computer science team developed a new
+                                    interactive and immersive user interface software for The Orpheum Children’s Museum.<br/>                                    Designed and built a Scheduler UI using XML and ASP.NET with multiply functions (send
+                                    emails at a certain time; add local data as attachments; important event notification;
+                                    process executable files).<br/> Enhanced the NCGA membership project with functions of
+                                    address input correction and postcode plus4 modification by using C# Silverlight and
+                                    SQL Server.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="clear"></div>
+                    </section>
+
+                    <section>
+                        <div class="sectionTitle">
+                            <h1>Education</h1>
+                        </div>
+
+                        <div class="sectionContent">
+                            <article>
+                                <h2>University of Illinois at Urbana Champaign</h2>
+                                <p class="subDetails">Master of Science in Statistics</p>
+                                <p>GPA: 3.81/4.00</p>
+                            </article>
+                            <article>
+                                <h2>Saint Mary's University of Minnesota</h2>
+                                <p class="subDetails">Bachelors of Science in Mathematics/Computer Science, Minor: Statistics</p>
+                                <p>GPA: 3.6/4.00 Dean’s Honors List (top 10%)</p>
+                            </article>
+                            <article>
+                                <h2>Northwest University</h2>
+                                <p class="subDetails">Major in Computer Science and Technology</p>
+                                <p>Top 1% GPA, and successfully selected out of over 100 students for the exchange program to
+                                    Saint Mary’s University with half tuition deduction</p>
+                            </article>
+                        </div>
+                        <div class="clear"></div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="game" class="tab-pane fade">
+            <h3>Game</h3>
+            <p>For Fun</p>
+            <canvas id="can" width="400" height="400" style="background-color: black">对不起，您的浏览器不支持canvas</canvas>
+            <script>
+                var snake = [41, 40],       //snake队列表示蛇身，初始节点存在但不显示
+                    direction = 1,          //1表示向右，-1表示向左，20表示向下，-20表示向上
+                    food = 43,              //食物的位置
+                    n,                      //与下次移动的位置有关
+                    box = document.getElementById('can').getContext('2d');
+                //从0到399表示box里[0~19]*[0~19]的所有节点，每20px一个节点
+                function draw(seat, color) {
+                    box.fillStyle = color;
+                    box.fillRect(seat % 20 * 20 + 1, ~~(seat / 20) * 20 + 1, 18, 18);
+                    //用color填充一个矩形，以前两个参数为x，y坐标，后两个参数为宽和高。
+                }
+                document.onkeydown = function (evt) {
+                    //当键盘上下左右键摁下的时候改变direction
+                    direction = snake[1] - snake[0] == (n = [-1, -20, 1, 20][(evt || event).keyCode - 37] || direction) ? direction : n;
+                };
+                !function () {
+                    snake.unshift(n = snake[0] + direction);
+                    //此时的n为下次蛇头出现的位置，n进入队列
+                    if (snake.indexOf(n, 1) > 0 || n < 0 || n > 399 || direction == 1 && n % 20 == 0 || direction == -1 && n % 20 == 19) {
+                        //if语句判断贪吃蛇是否撞到自己或者墙壁，碰到时返回，结束程序
+                        return alert("GAME OVER!");
+                    }
+                    draw(n, "lime");        //画出蛇头下次出现的位置
+                    if (n == food) {         //如果吃到食物时，产生一个蛇身以外的随机的点，不会去掉蛇尾
+                        while (snake.indexOf(food = ~~(Math.random() * 400)) > 0);
+                        draw(food, "yellow");
+                    } else {                //没有吃到食物时正常移动，蛇尾出队列
+                        draw(snake.pop(), "black");
+                    }
+                    setTimeout(arguments.callee, 150);
+                    //每隔0.15秒执行函数一次，可以调节蛇的速度
+                }();
+            </script>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+              $( document ).ready(function() {
+                $('#example').tabs({
+                    load: function (event, ui) {
+                        $('a', ui.panel).click(function () {
+                            $(ui.panel).load(this.href);
+                            return false;
+                        });
+                    }
+                });
+                });
+                
+    </script>
 </body>
+
 </html>
